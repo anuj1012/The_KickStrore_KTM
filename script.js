@@ -19,3 +19,18 @@ function redirectToBuy(image,name,price){
 
     window.location.href='buy.html';
 }
+
+function Sale(){
+    window.location.href='mens.html';
+}
+
+
+function zoom(image,name,price){
+
+    localStorage.setItem('productImage',image),
+    localStorage.setItem('productName',name),
+    localStorage.setItem('productPrice',price);
+
+    window.location.href='zoom.html';
+}
+

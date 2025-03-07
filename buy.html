@@ -27,7 +27,23 @@
             <h3 id="productName" class="text-lg mb-2"></h3>
             <p id="productPrice" class="text-xl font-semibold"></p>
 
-            <form action="#" method="POST" class="mt-4">
+            <form action="https://api.web3forms.com/submit" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="c0fdbaf3-aa19-43a4-add1-9646a24dc7fc">
+                
+                <input type="hidden" name="product_name" id="hiddenProductName">
+                <input type="hidden" name="product_price" id="hiddenProductPrice">
+
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-800 font-semibold mb-1">Name</label>
+                    <input placeholder="Enter your name" type="text" id="name" name="name" required 
+                           class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 transition duration-200 ease-in-out p-2">
+                </div>
+
+    
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
                 <div class="mb-4">
                     <label for="size" class="block text-gray-700">Select Size:</label>
                     <select id="size" name="size" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
@@ -37,22 +53,27 @@
                         <option value="44">Size 44</option>
                     </select>
                 </div>
+
                 <div class="mb-4">
                     <label for="quantity" class="block text-gray-700">Quantity:</label>
                     <input type="number" id="quantity" name="quantity" min="1" value="1" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 p-2">
                 </div>
+
                 <div class="mb-4">
                     <label for="contact" class="block text-gray-700">Contact Number:</label>
                     <input type="tel" id="contact" name="contact" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 p-2">
                 </div>
+
                 <div class="mb-4">
                     <label for="address" class="block text-gray-700">Address:</label>
                     <textarea id="address" name="address" rows="3" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 p-2"></textarea>
                 </div>
+
                 <div class="mb-4">
                     <label for="postal-code" class="block text-gray-700">Postal Code:</label>
-                    <input type="text" id="postal-code" name="postal-code" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 p-2">
+                    <input type="text" id="postal-code"                     <input type="text" id="postal-code" name="postal-code" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 p-2">
                 </div>
+
                 <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">Place Order</button>
             </form>
         </div>
@@ -73,6 +94,10 @@
             document.getElementById('productImage').src = productImage;
             document.getElementById('productName').textContent = productName;
             document.getElementById('productPrice').textContent = productPrice;
+
+            // Set hidden fields for product name and price
+            document.getElementById('hiddenProductName').value = productName;
+            document.getElementById('hiddenProductPrice').value = productPrice;
         });
     </script>
 
