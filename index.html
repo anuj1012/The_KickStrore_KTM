@@ -9,17 +9,23 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
 </head>
-<body class="font-sans bg-gray-100 text-gray-800">
-
-    <nav class="sticky top-0 z-50 bg-gradient-to-r from-black via-black/70 to-black/30 shadow-md py-4">
-        <ul class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <li><a href="#" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Home</a></li>
-            <li><a href="mens.html" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Men</a></li>
-            <li><a href="womens.html" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Women</a></li>
-            <!-- <li><a href="#" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Kids</a></li> -->
-            <li><a href="sale.html" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Sale</a></li>
-            <li><a href="contact.html" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Contact</a></li>
-        </ul>
+<body class="font-sans bg-gray-200 text-gray-800">
+    <nav class="sticky top-0 z-50 bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 shadow-md py-4">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-4">
+            <!-- Logo Section -->
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="Logo" class="h-8 mr-2 rounded-xl"> <!-- Adjust the height as needed -->
+                <span class="text-white text-xl font-bold">Shoe Store</span> <!-- Optional: Store Name -->
+            </div>
+            <!-- Navigation Links -->
+            <ul class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <li><a href="#" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Home</a></li>
+                <li><a href="mens.html" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Men</a></li>
+                <li><a href="womens.html" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Women</a></li>
+                <li><a href="sale.html" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Sale</a></li>
+                <li><a href="contact.html" class="text-white hover:bg-white/20 px-4 py-2 rounded transition">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     
     <section class="relative bg-cover bg-center text-white py-48" style="background-image: url('images/logo.png');">
@@ -27,7 +33,7 @@
         <div class="relative z-10 text-center px-4">
             <h1 class="text-4xl sm:text-5xl mb-4">Welcome to The-Kick-Store</h1>
             <p class="text-lg sm:text-xl mb-8">Step into Style</p>
-            <a href="#" class="inline-block bg-blue-600 text-white py-3 px-6 rounded transition hover:bg-blue-700">Shop Now</a>
+            <a href="#" class="inline-block bg-blue-600 text-white py-3 px-6 rounded-xl transition hover:bg-blue-700">Shop Now</a>
         </div>
     </section>
     
@@ -41,7 +47,7 @@
             </div>
             <div class="border border-gray-300 p-6 text-center bg-white shadow-md transition-transform transform hover:scale-105">
                 <img src="images/hoka.jpg" alt="Shoe 2" class="w-full h-auto mb-4">
-                <h3 class="text-lg mb-2">Hoka Speed Goat 5 Trail Shoe 👟</h3>
+                <h3 class="text-lg mb-2">Hoka Speed Goat 5 Trail Shoe </h3>
                 <p>$79.99</p>
             </div>
             <div class="border border-gray-300 p-6 text-center bg-white shadow-md transition-transform transform hover:scale-105">
@@ -51,14 +57,14 @@
             </div>
             <div class="border border-gray-300 p-6 text-center bg-white shadow-md transition-transform transform hover:scale-105">
                 <img src="images/olive.jpg" alt="Shoe 4" class="w-full h-auto mb-4">
-                <h3 class="text-lg mb-2">Arteryx Trail Running Shoes 👟</h3>
+                <h3 class="text-lg mb-2">Arcteryx Trail Running Shoes </h3>
                 <p>$129.99</p>
             </div>
         </div>
     </div>
     
-    <footer class="bg-gray-800 text-white text-center py-4 mt-12">
-        <p>&copy; 2025 Kick-Store-KTM. All rights reserved.</p>
+    <footer class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white text-center py-4">
+        <p>&copy; 2025 The-Kick-Store. All rights reserved.</p>
     </footer>
     
     <script src="script.js"></script>
